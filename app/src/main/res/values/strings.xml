@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">تطبيق السائق</string>
+
+    <!--Titles-->
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="signup_title">انشاء حساب جديد</string>
+
+    <!--Welcome messages-->
+    <string name="splash_welcome_txt">Easiest way to\nbe Driver</string>
+    <string name="login_welcome_txt">Hello there !\nWelcome Back</string>
+    <string name="signup_welcome_txt">Hello there !\nWelcome to you</string>
+    <string name="aden">عدن تاكسي</string>
+
+
+    <!--Button labels-->
+    <string name="login_btn_label">تسجيل الدخول</string>
+    <string name="signup_btn_label">انشاء حساب جديد</string>
+
+    <string name="login_label">" تسجيل الدخول"</string>
+    <string name="signup_label">" انشاء حساب جديد"</string>
+
+    <string name="singup_btn_label">انشاء حساب</string>
+
+    <string name="active_btn_label">متوفر</string>
+    <string name="disactive_btn_label">غير متوفر</string>
+
+    <!--Edit Text hints-->
+    <string name="email_address_hint">البريد الالكتروني</string>
+    <string name="car_name_hint">نوع السياره</string>
+    <string name="full_name_hint">الاسم الرباعي</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="phone_hint">رقم الهاتف</string>
+
+    <string name="minimum_password">يجب الا تقل كلمة المرور عن 6 احرف!</string>
+    <string name="auth_failed">العملية فشلت .. تاكد من البريد الالكتروني او كلمة المرور</string>
+
+
+    <!--Misc texts-->
+    <string name="no_account">ليس لدي حساب ؟</string>
+    <string name="have_account">لدي حساب ؟</string>
+
+</resources>

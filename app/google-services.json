@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "899366798141",
+    "firebase_url": "https://adentaxi-d649f.firebaseio.com",
+    "project_id": "adentaxi-d649f",
+    "storage_bucket": "adentaxi-d649f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899366798141:android:1f936ef5712be5cb",
+        "android_client_info": {
+          "package_name": "com.example.adentaxi.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899366798141-769acvrf9ovstdlqjt33t04vm2lmo4ue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adentaxi.driverapp",
+            "certificate_hash": "af596f05aa00157d2208b2e04abd17c325eda7ac"
+          }
+        },
+        {
+          "client_id": "899366798141-7sgvlcgclh4bn9g1pvsqrrcj7on63dbu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA5GONteztp1aD8qgeRGNUSoAWrMY_Xms"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899366798141-7sgvlcgclh4bn9g1pvsqrrcj7on63dbu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

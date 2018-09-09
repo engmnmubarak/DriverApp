@@ -1,8 +1,6 @@
 package com.example.adentaxi.driverapp.Interface;
 
 
-import com.google.android.gms.maps.model.LatLng;
-
 public class DriverInfo {
     private String name;
     private String email;
@@ -10,19 +8,21 @@ public class DriverInfo {
     private String car_name;
     private String password;
     private String driver_active;
-    private LatLng driverLocation;
+    private Double driverLatitude;
+    private Double driverLongitude;
 
     public DriverInfo() {
     }
 
-    public DriverInfo(String name, String email, String phone, String car_name, String password, String driver_active, LatLng driverLocation) {
+    public DriverInfo(String name, String email, String phone, String car_name, String password, String driver_active, Double driverLatitude, Double driverLongitude) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.car_name = car_name;
         this.password = password;
         this.driver_active = driver_active;
-        this.driverLocation = driverLocation;
+        this.driverLatitude = driverLatitude;
+        this.driverLongitude = driverLongitude;
     }
 
     public String getName() {
@@ -73,12 +73,20 @@ public class DriverInfo {
         this.driver_active = driver_active;
     }
 
-    public LatLng getDriverLocation() {
-        return driverLocation;
+    public Double getDriverLatitude() {
+        return driverLatitude;
     }
 
-    public void setDriverLocation(LatLng driverLocation) {
-        this.driverLocation = driverLocation;
+    public void setDriverLatitude(Double driverLatitude) {
+        this.driverLatitude = driverLatitude;
+    }
+
+    public Double getDriverLongitude() {
+        return driverLongitude;
+    }
+
+    public void setDriverLongitude(Double driverLongitude) {
+        this.driverLongitude = driverLongitude;
     }
 }
 

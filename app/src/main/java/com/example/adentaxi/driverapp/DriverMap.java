@@ -46,7 +46,8 @@ public class DriverMap extends FragmentActivity implements LocationListener,
 
     private FirebaseDatabase database;
     private FirebaseAuth Auth;
-    LatLng driver_LatLng;
+    Double driverLatitude;
+    Double driverLongitude;
     private Button btn_active,btn_disactive;
     ImageView btn_logout;
     private String userkey;
@@ -190,15 +191,21 @@ public class DriverMap extends FragmentActivity implements LocationListener,
                 if(getApplicationContext()!=null){
 
                     mGoogleMap.clear();
-                    driver_LatLng = new LatLng(location.getLatitude(),location.getLongitude());
+                    driverLatitude = location.getLatitude();
+                    driverLongitude = location.getLongitude();
+                    LatLng driver_LatLng = new LatLng(driverLatitude,driverLongitude);
                     mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(driver_LatLng));
                     mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(12));
 
                     userkey = FirebaseAuth.getInstance().getCurrentUser().getUid();
-                    DatabaseReference databaseReference = database.getReference("Drivers").child(userkey).child("driverLocation");
+                    DatabaseReference databaseReference = database.getReference("Drivers");
+                    databaseReference.child(userkey)
+                            .child("driverLatitude").setValue(driverLatitude);
+                    databaseReference.child(userkey)
+                            .child("driverLongitude")
+                            .setValue(driverLongitude);
 //                        double lati = location.getLatitude();
 //                        double longy = location.getLongitude();
-                        databaseReference.setValue(driver_LatLng);
 
 
 //                    LatLng driverLatLng = new LatLng(lati, longy);

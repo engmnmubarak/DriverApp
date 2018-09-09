@@ -34,7 +34,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/logo2"
-                 />
+                />
 
             <TextView
                 android:id="@+id/login_title"
@@ -58,9 +58,9 @@
                 android:id="@+id/et_password"
                 style="@style/EditTextStyle"
                 android:layout_below="@id/et_email_address"
-                android:layout_marginTop="@dimen/layout_in_between_margins"
                 android:hint="@string/password_hint"
-                android:inputType="textPassword" />
+                android:layout_marginTop="@dimen/layout_in_between_margins"
+                android:inputType="textEmailAddress" />
 
             <Button
                 android:id="@+id/btn_login"
@@ -103,7 +103,5 @@
                     android:textSize="16sp" />
             </RelativeLayout>
         </RelativeLayout>
-
-
     </RelativeLayout>
 </layout>

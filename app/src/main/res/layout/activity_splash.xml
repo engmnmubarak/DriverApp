@@ -35,6 +35,16 @@
                 android:layout_marginBottom="180dp"
                 android:text="@string/aden"
                 android:textColor="@color/orange"
+                android:textSize="35dp"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="140dp"
+                android:text="@string/app_name"
+                android:textColor="@color/orange"
+                android:textSize="25dp"
                 android:layout_centerInParent="true"
                 />
 

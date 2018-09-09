@@ -89,9 +89,7 @@
                 android:layout_below="@id/et_car_name"
                 android:layout_marginTop="6dp"
                 android:hint="@string/password_hint"
-                android:inputType="textPassword"
-                android:layout_alignParentRight="true"/>
-
+                android:inputType="numberPassword" />
 
             <Button
                 android:id="@+id/btn_signup"

@@ -81,8 +81,6 @@ public class DriverMap extends FragmentActivity implements LocationListener,
             public void onClick(View v) {
                     getLocation();
 
-
-
             }
         });
 
@@ -98,8 +96,8 @@ public class DriverMap extends FragmentActivity implements LocationListener,
             public void onClick(View v) {
                         //Set Message and Title
                     AlertDialog.Builder builder = new AlertDialog.Builder(DriverMap.this);
-                    builder.setMessage("هل انت متأكد انك تريد تسجيل الخروج من تطبيق عدن تاكسي")
-                            .setTitle("تاكيد تسجيل الخروج                  ");
+                    builder.setMessage("هل تريد تسجيل الخروج من تطبيق عدن تاكسي؟")
+                            .setTitle("تاكيد تسجيل الخروج                     ");
 
                     //Set When SEND Button Click
                     builder.setPositiveButton("خروج", new DialogInterface.OnClickListener() {
@@ -204,11 +202,8 @@ public class DriverMap extends FragmentActivity implements LocationListener,
                     databaseReference.child(userkey)
                             .child("driverLongitude")
                             .setValue(driverLongitude);
-//                        double lati = location.getLatitude();
-//                        double longy = location.getLongitude();
 
 
-//                    LatLng driverLatLng = new LatLng(lati, longy);
                         if (currentMarker!=null) {
                             currentMarker.remove();
                             currentMarker=null;

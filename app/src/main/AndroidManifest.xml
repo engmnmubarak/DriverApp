@@ -3,9 +3,10 @@
     package="com.example.adentaxi.driverapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,7 @@
         <activity android:name=".Signup"></activity>
         <activity android:name=".Login"></activity>
         <activity android:name=".DriverMap"></activity>
+        <activity android:name=".ContactActivity"></activity>
 
     </application>
 

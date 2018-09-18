@@ -28,6 +28,7 @@ public class Signup extends AppCompatActivity {
     ActivitySignupBinding binding;
 
     private EditText inputName,inputEmail,inputPhone,inputCar_Name, inputPassword;
+
     private FirebaseAuth Auth;
     DatabaseReference databaseReference;
 
@@ -77,7 +78,7 @@ public class Signup extends AppCompatActivity {
                     return;
                 }
 
-                if (password.length() == 9) {
+                if (phone.length() == 9) {
                     Toast.makeText(getApplicationContext(), "يجب ان يكون رقم الهاتف من 9 ارقام!", Toast.LENGTH_SHORT).show();
                     return;
                 }

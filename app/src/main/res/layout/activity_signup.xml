@@ -89,7 +89,7 @@
                 android:layout_below="@id/et_car_name"
                 android:layout_marginTop="6dp"
                 android:hint="@string/password_hint"
-                android:inputType="numberPassword" />
+                android:inputType="textEmailAddress" />
 
             <Button
                 android:id="@+id/btn_signup"
@@ -107,14 +107,6 @@
                 android:layout_alignParentBottom="true"
                 android:gravity="center"
                 android:layout_marginTop="30dp">
-
-                <!--<TextView
-                    android:id="@+id/have_account"
-                    style="@style/LabelStyle"
-                    android:fontFamily="@font/sf_pro_display_medium"
-                    android:text="@string/have_account"
-                    android:textColor="@color/account"
-                    android:textSize="16sp" />-->
 
                 <TextView
                     android:id="@+id/login"

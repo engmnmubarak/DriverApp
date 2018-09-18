@@ -7,6 +7,14 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/contact"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitStart"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_contact" />
+
+        <ImageView
             android:id="@+id/splashBg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,6 +77,7 @@
                     android:onClick="getStarted"
                     android:text="@string/singup_btn_label"
                     android:textSize="14sp" />
+
             </RelativeLayout>
         </RelativeLayout>
     </RelativeLayout>
